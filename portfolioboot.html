@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#academics">Academics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 style="text-align: center;">Welcome to My Portfolio</h2>
+        <h3 style="text-align: center;">POOJA KUNDURU</h3>
+        <h3 style="text-align: center;">Web Developer</h3>
+        <h3 style="text-align: center;">Email : kprxxxxx@gmail.com</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+                <li>I am a web developer with 2 years of experience in Fujitsu as a project lead.</li>
+                <li>I am very passionate to learn new tecnologies.</li>
+                <li>I am comfortable to work with senior developers.</li>
+                <li>I can guide my juniors and share the knowledge i have with them.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="academics" class="py-5">
+  <div class="container">
+    <h2>Academic Skills</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S No.</th>
+          <th>Name of the Institution</th>
+          <th>Percentage/CGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Keshav Memorial Institute of Technology</td>
+          <td>9.12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sri Chaitanya Junior kalasala</td>
+            <td>98.6%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sri Chaitanya High School</td>
+            <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Virtual Classroom</h5>
+        <p class="card-text">MERN stack and Web Sockets</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">More Info</button>
+      </div>
+    </div>
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Slice Of Spice</h5>
+        <p class="card-text">java and MYSQL database</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">More Info</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Provides audio video chat along with special features like white board and this project uses MERN stack and web sockets.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Console based java project that enables user to choose food items from a given menu and a bill is returned which can be paid using cash or a smart card which is exclusive for this store.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="blog" class="py-5">
+  <div class="container">
+    <h2>Blog</h2>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
